@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Mi Cumpleaños!</title>
+    <style>
+        body {
+            background-color: #1a1a2e;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .card {
+            background: #16213e;
+            max-width: 450px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        button {
+            background-color: #e94560;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        button:hover {
+            background-color: #ff6b81;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>¡Estás invitado a mi cumpleaños! 🎉</h1>
+        <p>Acompáñame a celebrar un año más.</p>
+
+        <img src="fiesta.gif" alt="GIF de fiesta">
+
+        <audio id="miMusica" loop>
+            <source src="musica.mp3" type="audio/mpeg">
+        </audio>
+        <br>
+        <button onclick="reproducir()">🎵 Reproducir Música</button>
+
+        <p><strong>📅 Fecha:</strong> Sábado 28</p>
+        <p><strong>⏰ Hora:</strong> 8:00 PM</p>
+        <p><strong>📍 Lugar:</strong> Mi casa</p>
+    </div>
+
+    <script>
+        function reproducir() {
+            var audio = document.getElementById("miMusica");
+            audio.play();
+        }
+    </script>
+
+</body>
+</html>
